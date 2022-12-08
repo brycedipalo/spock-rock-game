@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spock Rock Game</title>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!--/favicon-->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Rock Paper Sicissors Lizard Spock</h1>
+        </div>
+        <div class="player-container" id="player">
+            <h2>You - 
+                <span id="playerScore">0</span>
+                <span id="playerChoice" class="choice"></span>
+            </h2>
+            <i class="fa-regular fa-hand-back-fist" title="Rock" id="playerRock" onclick="select('rock')"></i>
+            <i class="fa-regular fa-hand " title="Paper" id="playerPaper" onclick="select('paper')"></i>
+            <i class="fa-regular fa-hand-scissors" title="Scissors" id="playerScissors" onclick="select('scissors')"></i>
+            <i class="fa-regular fa-hand-lizard" title="Lizard" id="playerLizard" onclick="select('lizard')"></i>
+            <i class="fa-regular fa-hand-spock" title="Spock" id="playerSpock" onclick="select('spock')"></i>
+        </div>
+        <div class="player-container" id="computer">
+            <h2>Computer - 
+                <span id="computerScore">0</span>
+                <span id="computerChoice"  class="choice"></span>
+            </h2>
+            <i class="fa-regular fa-hand-back-fist" title="Rock" id="computerRock"></i>
+            <i class="fa-regular fa-hand" title="Paper" id="computerPaper"></i>
+            <i class="fa-regular fa-hand-scissors" title="Scissors" id="computerScissors"></i>
+            <i class="fa-regular fa-hand-lizard" title="Lizard" id="computerLizard"></i>
+            <i class="fa-regular fa-hand-spock" title="Spock" id="computerSpock"></i>
+        </div>
+        <i class="fa-solid fa-sync-alt reset-icon" title="Reset" onclick="resetAll()"></i>
+        <div class="result-container">
+            <h3 class="result-text" id="resultText"></h3>
+
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>
